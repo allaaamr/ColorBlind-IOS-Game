@@ -11,6 +11,7 @@
 		B6FE79F228BCAD7E004F873D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE79F128BCAD7E004F873D /* ContentView.swift */; };
 		B6FE79F428BCAD80004F873D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FE79F328BCAD80004F873D /* Assets.xcassets */; };
 		B6FE79F728BCAD80004F873D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FE79F628BCAD80004F873D /* Preview Assets.xcassets */; };
+		B6FE79FE28BCAF9B004F873D /* ColorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE79FD28BCAF9B004F873D /* ColorBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B6FE79F128BCAD7E004F873D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6FE79F328BCAD80004F873D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FE79F628BCAD80004F873D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6FE79FD28BCAF9B004F873D /* ColorBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		B6FE79EE28BCAD7E004F873D /* ColorBlind */ = {
 			isa = PBXGroup;
 			children = (
+				B6FE79FD28BCAF9B004F873D /* ColorBox.swift */,
 				B6FE79EF28BCAD7E004F873D /* ColorBlindApp.swift */,
 				B6FE79F128BCAD7E004F873D /* ContentView.swift */,
 				B6FE79F328BCAD80004F873D /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FE79FE28BCAF9B004F873D /* ColorBox.swift in Sources */,
 				B6FE79F228BCAD7E004F873D /* ContentView.swift in Sources */,
 				B6FE79F028BCAD7E004F873D /* ColorBlindApp.swift in Sources */,
 			);
