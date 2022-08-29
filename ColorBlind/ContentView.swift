@@ -12,14 +12,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var GameTitle = "OrangeBlind"
     @State private var gameEnded = false
+    @State private var shade = Int.random(in: 0..<15)
     @State private var shades =
         ["#ffb300","#ffa812","#ffa700","#ff9f00",
          "#ff8f00","#ff8c00","#ff7f00","#f77f00",
-         
          "#ff7518", "#ffbf00", "#ffba00", "#f28500",
          "#fb9902", "#ffa813", "#ffa811", "#ff9944"
     ]
-    @State private var randomShadeIndex = 0
     private var ranges = [(0..<4),(4..<8),(8..<12),(12..<16)]
     @State private var attempts = 4
     
@@ -39,7 +38,7 @@ struct ContentView: View {
                 Text("Can you get the color?")
                     .foregroundColor(.white)
                     .font(.system(size: 22))
-                ColorBox(shade: generateRandom())
+                ColorBox(shade: shades[shade])
                 Text("Remaining Attempts: \(attempts)")
                     .foregroundColor(.white)
                     .font(.system(size: 15))
@@ -67,13 +66,7 @@ struct ContentView: View {
         }
     }
     
-    func generateRandom() -> String{
-        var x = Int.random(in: 0..<15)
-        print(x)
-        randomShadeIndex = x
-        return shades[x]
-        
-    }
+   
     
     func resetGame() {
         GameTitle = "OrangeBlind"
@@ -85,8 +78,8 @@ struct ContentView: View {
     }
     func playerTap(index: Int){
         if shades[index] != "#000000"{
-            if index != randomShadeIndex {
-                if attempts > 0 {
+            if index != shade {
+                if attempts > 1 {
                     attempts -= 1
                     shades[index] = "#000000"
                     
